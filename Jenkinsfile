@@ -6,13 +6,13 @@ pipeline {
         stage('Build') {
           steps {
             echo 'Hello Jenkins !'
-            sh '''echo "Pipeline is starting ..!"
-echo "This is build stage !"'''
+            sh '''echo \'Pipeline is starting ..!\'
+echo \'This is build stage !\''''
           }
         }
         stage('Test') {
           steps {
-            sh 'echo "This is Test Stage !"'
+            sh 'echo \'This is Test Stage !\''
             build 'DubizzleTest'
           }
         }
